@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            background: linear-gradient(to right, dodgerblue 0%, deepskyblue 100%);
+        }
+        h1 {
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        header {
+            background-color: #430047;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        .section {
+            padding: 2em;
+            margin-top: 4em;
+        }
+
+        .section-title {
+            margin-top: 0;
+            animation: fadeIn 1s ease;
+            color: black;
+            font-size: 35px;
+            margin-left: 60px;
+        }
+
+        .section-text {
+            animation: fadeIn 1s ease 0.5s;
+            font-size: 25px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 1em;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease 1s;
+            border-radius: 5px;
+        }
+
+        .project-title {
+            margin-top: 0;
+            animation: fadeIn 1s ease 1.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <h1 class="section-title">About Me</h1>
+        <p class="section-text"><h3><b>Haritha Alluri</b></h3></p>
+        <p>I am a web developer with experience in building responsive, user-friendly websites.</p>
+    </section>
+    <section id="projects" class="section">
+        <h1 class="section-title">My Projects</h1>
+        <div class="project">
+            <h2 class="project-title"><a href="https://brainly.in" target="_blank">Project 1: Brainly</a></h2>
+        </div>
+        <div class="project">
+            <h2 class="project-title"><a href="https://www.toppr.com" target="_blank">Project 2: Toppr</a></h2>
+        </div>
+        <div class="project">
+            <h2 class="project-title"><a href="https://byjus.com" target="_blank">Project 3: Byju's</a></h2>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <h1 class="section-title">Contact</h1>
+        <p class="section-text">Get in touch with me via email:</p>
+        <a href="mailto:alluriharitha23@gmail.com" style="text-decoration:underline"><b>alluriharitha23@gmail.com</b></a>
+    </section>
+</body>
+</html>
